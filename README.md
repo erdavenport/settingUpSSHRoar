@@ -8,32 +8,32 @@ Following the instructions [here](https://docs.github.com/en/free-pro-team@lates
 
 ### 1. Log onto the cluster and open a terminal
 
-![pic1](pic1.png)
+![pic1](fig/pic1.png)
 
 ### 2. Type the text below, making sure you use _your_ GitHub email address and not mine!
 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`  
 
-![pic2](pic2.png)
+![pic2](fig/pic2.png)
 
 ### 3. When you're prompted to "Enter file in which to save the key", press Enter (accepts the default file location).
 
-![pic3](pic3.png)
+![pic3](fig/pic3.png)
 
 ### 4. When it asks for a passphrase, either enter a passphrase if you would like or hit enter to leave blank. Repeat the same passphrase again.
 
-![pic4](pic4.png)
-![pic5](pic5.png)
+![pic4](fig/pic4.png)
+![pic5](fig/pic5.png)
 
 ### 5. You should now see a message that your key has been saved. You should see a little image (yours will look different than the one on my screen).
 
-![pic6](pic6.png)
+![pic6](fig/pic6.png)
 
 ### 6. Next you need to add your SSH key to the ssh-agent using the code below:
 
 `eval "$(ssh-agent -s)"`
 
-![pic7](pic7.png)
+![pic7](fig/pic7.png)
 
 You will very likely see a different agent pid number listed than the one in my screenshot.
 
@@ -41,9 +41,9 @@ You will very likely see a different agent pid number listed than the one in my 
 
 `ssh-ad ~/.ssh/id_rsa`
 
-![pic8](pic8.png)
+![pic8](fig/pic8.png)
 
-![pic9](pic9.png)
+![pic9](fig/pic9.png)
 
 ## Step 2: Add the new SSH key to your GitHub account
 
@@ -53,32 +53,32 @@ These instructions are spelled out [here](https://docs.github.com/en/free-pro-te
 
 `cat ~/.ssh/id_rsa.pub`
 
-![pic10](pic10.png)
+![pic10](fig/pic10.png)
 
 ### 2. Copy the full contents of what was printed to the screen (should start with `ssh-rsa` and end with your email address)
 
-![pic11](pic11.png)
+![pic11](fig/pic11.png)
 
 ### 3. Open the noVNC tab to copy the contents of the clipboard to your personal computers clipboard.
 
-![pic12](pic12.png)
+![pic12](fig/pic12.png)
 
 ### 4. Log into your GitHub account and open the Settings menu (under your account picture in the upper right hand corner of the page)
 
-![pic13](pic13.png)
+![pic13](fig/pic13.png)
 
 ### 5. In the menu to the left, select the "SSH and GPG keys" option.
 
-![pic14](pic14.png)
+![pic14](fig/pic14.png)
 
 ### 6. Create a new SSH key entry by clicking the green "New SSH key" button in the upper right hand corner of the page.
 
-![pic15](pic15.png)
+![pic15](fig/pic15.png)
 
 ### 7. Add a title for the location of the key (ACI-ICDS, Roar, PSU, etc.) and paste the SSH key into the "Key" box. Click the green Add SSH key button when done. 
 
-![pic16](pic16.png)
+![pic16](fig/pic16.png)
 
 ### 8. You should now see the new SSH key added. Done! Be sure to use the SSH option when adding remotes in git and not the HTTPS option. 
 
-![pic17](pic17.png)
+![pic17](fig/pic17.png)
