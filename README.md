@@ -39,7 +39,7 @@ You will very likely see a different agent pid number listed than the one in my 
 
 ### 7. Add the SSH key to your key file 
 
-`ssh-ad ~/.ssh/id_rsa`
+`ssh-add ~/.ssh/id_rsa`
 
 ![pic8](fig/pic8.png)
 
